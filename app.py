@@ -9,8 +9,8 @@ def caeser_cipher(message, shift, encode=True):
             base = ord('a') if char.islower() else ord('A')
             shifted = (ord(char) - base + shift) % 26 + base
             result += chr(shifted)
-    else:
-        result += char
+        else:
+            result += char
     return result
 
 
